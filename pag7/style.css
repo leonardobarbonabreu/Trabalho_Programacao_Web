@@ -1,0 +1,238 @@
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+@media (orientation: portrait) {
+    main {
+        flex-direction: column-reverse;
+    }
+
+}
+/* Estilos para orientação paisagem */
+@media (orientation: landscape) {
+    main {
+        flex-direction: row;    
+    }
+}
+
+p {
+    font-size: 20px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 12px 0 0 0;
+}
+
+h1 {
+    font-size: 62px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-login-area {
+    width: 100%;    
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-area {
+    height: 200px;
+    max-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.painel {
+    width: 100%;
+    height: 100%;    
+    background-color: #ffde59;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: -1;
+}
+
+@media (orientation: portrait) {
+    .painel {
+        margin: 0;
+        width: 100%;
+        padding: 26px;
+        height: 400px;
+    }
+
+    .painel .logoLivraria-painel{
+        margin: auto;
+        padding: 36px;   
+        visibility: visible;     
+    }
+    
+    .logoLivraria {
+        visibility: hidden;
+    }
+
+}
+/* Estilos para orientação paisagem */
+@media (orientation: landscape) {
+    .painel {
+        max-width: 700px;                       
+        height: 600px;
+        right: 40px;        
+        border-radius: 24px;                
+    }
+
+    .painel .logoLivraria-painel{
+        visibility: hidden;
+    }    
+
+    .logoLivraria {
+        visibility: visible;
+    }
+}
+
+h2 {
+    margin-left: 40px;
+    font-size: 82px;
+    width: 300px;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+
+.logoLivraria {
+    width: 100%;
+    max-width: 80px;
+    margin-bottom: 20px;
+}
+
+.logoLivraria-painel {
+    width: 100%;
+    max-width: 80px;
+    margin-bottom: 20px;
+}
+
+#form-login {
+    background: white;
+    padding: 36px;
+    width: 100%;
+    max-width: 480px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 70px; */
+    border-radius: 24px;    
+    border: 3px solid #cdc7e8;
+    justify-content: space-between;
+}
+
+.form-btn-voltar {
+    width: 100%;
+    max-width: 220px;
+    height: 48px;
+    border-radius: 12px;
+    background-color: transparent;
+    border: 3px solid #cdc7e8;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media (orientation: portrait) {
+    #form-login {
+        max-width: 80%;
+    }    
+
+    .form-btn-voltar {
+        max-width: 120px;
+    }
+
+
+}
+/* Estilos para orientação paisagem */
+@media (orientation: landscape) {
+    
+#form-login {
+    background: white;
+    padding: 36px;
+    width: 100%;
+    max-width: 480px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 70px; */
+    border-radius: 24px;    
+    border: 3px solid #cdc7e8;
+    justify-content: space-between;
+}
+
+}
+
+
+
+.input-area {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-input {       
+    border-radius: 12px;    
+    border: 3px solid #cdc7e8;
+    height: 48px;
+}
+
+.form-label {
+    font-size: 22px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-btn-entrar {
+    width: 100%;
+    height: 56px;
+    border-radius: 12px;
+    background-color: black;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+}
+
+.form-rodape {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.form-rodape div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: end;
+    margin: 0;
+}
+
+
+.form-link {
+    font-size: 16px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;    
+    text-decoration: underline;
+}
+
+#criar-conta-link{
+    color: #7c01f0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;    
+    text-decoration: underline;    
+}
