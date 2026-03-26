@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f3f0eb;
+    font-family: 'Poppins', sans-serif;
+    color: #1d2b53;
+}
+
+/* HEADER */
+.cabecalho{
+    width: 100%;
+    min-height: 95px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.logo{
+    font-family: 'Playfair Display', serif;
+    font-size: 70px;
+    font-weight: 700;
+    color: #1d2b53;
+    text-decoration: none;
+}
+
+.menu{
+    display: flex;
+    gap: 38px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #111111;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/* MAIN */
+.perfil{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 160px 40px 140px; /* 🔥 MUITO maior */
+}
+
+.perfil-texto{
+    text-align: center;
+    margin-bottom: 120px; /* 🔥 mais espaço */
+}
+
+/* 🔥 TAG ENORME */
+.tag{
+    display: inline-block;
+    background: #efc343;
+    color: #111111;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 16px 36px;
+    border-radius: 999px;
+    margin-bottom: 80px;
+}
+
+/* 🔥 TÍTULO GIGANTE */
+.perfil-texto h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 100px; /* 🔥 dominante */
+    line-height: 1.1;
+    color: #1d2b53;
+    margin-bottom: 80px;
+}
+
+/* 🔥 TEXTO GRANDE */
+.perfil-texto p{
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 1.8;
+    color: #5f6472;
+}
+
+/* CARDS */
+.cards-equipe{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.card-perfil{
+    background: #ffffff;
+    width: 380px;
+    min-height: 460px;
+    padding: 40px 30px;
+    border-radius: 28px;
+    text-align: center;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+}
+
+.card-perfil img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    border: 4px solid #999178;
+}
+
+.card-perfil h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    color: #1d2b53;
+    margin-bottom: 12px;
+}
+
+.card-perfil p{
+    font-size: 17px;
+    line-height: 1.7;
+    color: #5f6472;
+    margin-bottom: 26px;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.redes a{
+    text-decoration: none;
+    background: #efc343;
+    color: #111111;
+    padding: 10px 16px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px){
+    .cabecalho{
+        padding: 20px;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu{
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .perfil-texto h1{
+        font-size: 52px;
+    }
+
+    .perfil-texto p{
+        font-size: 18px;
+    }
+
+    .perfil{
+        padding: 80px 20px 80px;
+    }
+}
+
+@media (max-width: 500px){
+    .logo{
+        font-size: 28px;
+    }
+
+    .perfil-texto h1{
+        font-size: 36px;
+    }
+
+    .perfil-texto p{
+        font-size: 16px;
+    }
+
+.card-perfil{
+    background: #ffffff;
+    width: 480px;        /* 🔥 maior */
+    min-height: 560px;   /* 🔥 mais alto */
+    padding: 50px 35px;  /* 🔥 mais espaço */
+    border-radius: 28px;
+    text-align: center;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+}
+ .card-perfil img{
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    border: 4px solid #dad0b3;
+}
+}
