@@ -9,31 +9,210 @@
 </head>
 <body>
     <header>
-        <h1>Portifólio de Produtos</h1>
     </header>
     <main>
         <div class="painel">
-            <h2>Sua biblioteca aqui.</h2>
-            <img class="logoLivraria-painel" src="LogoLivraria.svg" alt="">            
+            <div style="display: flex; flex-direction: column;">
+                <h2>Sua biblioteca aqui.</h2>
+            </div>            
+            <div>
+                <img class="logoLivraria-painel" src="LogoLivraria.svg" alt="">                                                
+            </div>            
         </div>
 
-        <div class="categorias">
+        <div class="sessao-pesquisa" style="width: 100%; height: 90px; margin: 60px 0px 60px 0px;">
+            <h3>Encontre seu próximo livro</h3>
+            <div class="area-pesquisa">
+                <input class="input-pesquisa" type="text" placeholder="Digite o nome do livro, autor ou gênero">
+
+                <button class="btnPesquisar">
+                    <img src="pesquiaIconBranco.svg" alt="">
+                </button>
+            </div>
 
         </div>
-        
-        <div>
-            <h3>Produtos mais vendidos</h3>
+
+        <div class="sessao-categorias">
+            <h3>Categorias</h3>            
+            <div class="categoria">Mais Vendidos</div>
+            <div class="categoria">Promoções da Semana</div>
+            <div class="categoria">Descobertas da semanas</div>                                
+            <div class="categoria">Lançamentos</div>    
+            <div class="categoria">Coleções</div>    
+            <div class="categoria">Produtos relacionados</div>            
+        </div>
+  
+        <div class="sessao-produtos" style="margin-bottom: 60px;">
+            <div class="cabecalho-sessao-produtos">
+                <h3>Produtos mais vendidos</h3>
+                <a>Ver mais</a> 
+            </div>
             <div class="grid-produtos">
+                <div class="item-prod">
+                    <img class="img-prod" src="livro-senhor-dos-aneis.png" alt="O Senhor dos Anéis">
+                    <hr size="1px" color="#cdc7e8" width="100%">
+                    <p class="descricao-prod">O Senhor dos Anéis</p>
+                    <div class="categorias-prod-area">
+                        <p style="background-color: #93c2f3;" class="categoria-prod">Fantasia</p>
+                        <p style="background-color: #ffbd59;" class="categoria-prod">Aventura</p>
+                    </div>
+                    <div style="width: 100%;display: flex; justify-content: space-between; align-items: center;">
+                        <p class="autor-prod">J.R.R. Tolkien</p>
+                        <div class="estrelas-prod">
+                            <p>4.9</p>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-desmarcada"></div>
+                        </div>
+                    </div>
+                    <div style="height: 100%; width: 100%; display: flex; align-items: flex-end;">
+                        <div class="preco-prod-area">
+                            <div>
+                                <p>A partir de</p>
+                                <p class="preco-prod">R$ 119,90</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="item-prod">
-                    <img src="livro1.jpg" alt="">   
-                    
-                    <p class="descricao-prod">Descrição do produto altamente pertinente</p>
-                    
-                    <div>
-                        <p class="autor-prod"></p>
+                    <img class="img-prod" src="livro-harry-potter.png" alt="Harry Potter e a Pedra Filosofal">
+                    <hr size="1px" color="#cdc7e8" width="100%">
+                    <p class="descricao-prod">Harry Potter e a Pedra Filosofal</p>
+                    <div class="categorias-prod-area">
+                        <p style="background-color: #93c2f3;" class="categoria-prod">Fantasia</p>
+                        <p style="background-color: #ffbd59;" class="categoria-prod">Aventura</p>
+                    </div>
+                    <div style="width: 100%;display: flex; justify-content: space-between; align-items: center;">
+                        <p class="autor-prod">J.K. Rowling</p>
+                        <div class="estrelas-prod">
+                            <p>4.8</p>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                        </div>
+                    </div>
+                    <div style="height: 100%; width: 100%; display: flex; align-items: flex-end;">
+                        <div class="preco-prod-area">
+                            <div>
+                                <p>A partir de</p>
+                                <p class="preco-prod">R$ 49,90</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-prod">
+                    <img class="img-prod" src="livro-sapiens.png" alt="Sapiens">
+                    <hr size="1px" color="#cdc7e8" width="100%">
+                    <p class="descricao-prod">Sapiens: Uma Breve História</p>
+                    <div class="categorias-prod-area">
+                        <p style="background-color: #8ddf9b;" class="categoria-prod">Ciência</p>
+                        <p style="background-color: #8ddf9b;" class="categoria-prod">Não-Ficção</p>
+                    </div>
+                    <div style="width: 100%;display: flex; justify-content: space-between; align-items: center;">
+                        <p class="autor-prod">Yuval Noah Harari</p>
+                        <div class="estrelas-prod">
+                            <p>4.8</p>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-desmarcada"></div>
+                        </div>
+                    </div>
+                    <div style="height: 100%; width: 100%; display: flex; align-items: flex-end;">
+                        <div class="preco-prod-area">
+                            <div>
+                                <p>A partir de</p>
+                                <p class="preco-prod">R$ 65,00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-prod">
+                    <img class="img-prod" src="livro-1984.png" alt="1984">
+                    <hr size="1px" color="#cdc7e8" width="100%">
+                    <p class="descricao-prod">1984</p>
+                    <div class="categorias-prod-area">
+                        <p style="background-color: #a39dff;" class="categoria-prod">Ficção Científica</p>
+                        <p style="background-color: #f3b1e5;" class="categoria-prod">Distopia</p>
+                    </div>
+                    <div style="width: 100%;display: flex; justify-content: space-between; align-items: center;">
+                        <p class="autor-prod">George Orwell</p>
+                        <div class="estrelas-prod">
+                            <p>4.8</p>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-desmarcada"></div>
+                        </div>
+                    </div>
+                    <div style="height: 100%; width: 100%; display: flex; align-items: flex-end;">
+                        <div class="preco-prod-area">
+                            <div>
+                                <p>A partir de</p>
+                                <p class="preco-prod">R$ 39,90</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sessao-produtos" style="margin-bottom: 60px;">
+            <div class="cabecalho-sessao-produtos">
+                <h3>Em promoção na semana</h3>
+                <a>Ver mais</a> 
+            </div>
+            <div class="grid-produtos">
+                <div class="item-prod">
+                    <img class="img-prod" src="livro-codigo-vinci.png" alt="O Código Da Vinci">
+                    <hr size="1px" color="#cdc7e8" width="100%">
+                    <p class="descricao-prod">O Código Da Vinci</p>
+                    <div class="categorias-prod-area">
+                        <p style="background-color: #ff5757;" class="categoria-prod">Suspense</p>
+                        <p style="background-color: #d3a3ff;" class="categoria-prod">Mistério</p>
+                    </div>
+                    <div style="width: 100%;display: flex; justify-content: space-between; align-items: center;">
+                        <p class="autor-prod">Dan Brown</p>
                         <div class="estrelas-prod">
                             <p>4.5</p>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-desmarcada"></div>
+                        </div>
+                    </div>
+                    <div style="height: 100%; width: 100%; display: flex; align-items: flex-end;">
+                        <div class="preco-prod-area">
+                            <div>
+                                <p>A partir de</p>
+                                <p class="preco-prod">R$ 45,00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-prod">
+                    <img class="img-prod" src="livro-orgulho-preconceito.png" alt="Orgulho e Preconceito">
+                    <hr size="1px" color="#cdc7e8" width="100%">
+                    <p class="descricao-prod">Orgulho e Preconceito</p>
+                    <div class="categorias-prod-area">
+                        <p style="background-color: #ffbd59;" class="categoria-prod">Romance</p>
+                        <p style="background-color: #ffc4a9;" class="categoria-prod">Drama</p>
+                    </div>
+                    <div style="width: 100%;display: flex; justify-content: space-between; align-items: center;">
+                        <p class="autor-prod">Jane Austen</p>
+                        <div class="estrelas-prod">
+                            <p>4.7</p>
                             <div class="estrela-marcada"></div>
                             <div class="estrela-marcada"></div>
                             <div class="estrela-marcada"></div>
@@ -48,12 +227,314 @@
                                 <p class="preco-prod">R$ 29,90</p>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
 
+                <div class="item-prod">
+                    <img class="img-prod" src="livro-duna.png" alt="Duna">
+                    <hr size="1px" color="#cdc7e8" width="100%">
+                    <p class="descricao-prod">Duna</p>
+                    <div class="categorias-prod-area">
+                        <p style="background-color: #a39dff;" class="categoria-prod">Ficção Científica</p>
+                        <p style="background-color: #ffbd59;" class="categoria-prod">Aventura</p>
+                    </div>
+                    <div style="width: 100%;display: flex; justify-content: space-between; align-items: center;">
+                        <p class="autor-prod">Frank Herbert</p>
+                        <div class="estrelas-prod">
+                            <p>4.6</p>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-desmarcada"></div>
+                        </div>
+                    </div>
+                    <div style="height: 100%; width: 100%; display: flex; align-items: flex-end;">
+                        <div class="preco-prod-area">
+                            <div>
+                                <p>A partir de</p>
+                                <p class="preco-prod">R$ 79,90</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="item-prod">
+                    <img class="img-prod" src="livro-pequeno-principe.png" alt="O Pequeno Príncipe">
+                    <hr size="1px" color="#cdc7e8" width="100%">
+                    <p class="descricao-prod">O Pequeno Príncipe</p>
+                    <div class="categorias-prod-area">
+                        <p style="background-color: #ffbd59;" class="categoria-prod">Aventura</p>
+                        <p style="background-color: #c4d6ff;" class="categoria-prod">Filosofia</p>
+                    </div>
+                    <div style="width: 100%;display: flex; justify-content: space-between; align-items: center;">
+                        <p class="autor-prod">Antoine de Saint-Exupéry</p>
+                        <div class="estrelas-prod">
+                            <p>4.9</p>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                        </div>
+                    </div>
+                    <div style="height: 100%; width: 100%; display: flex; align-items: flex-end;">
+                        <div class="preco-prod-area">
+                            <div>
+                                <p>A partir de</p>
+                                <p class="preco-prod">R$ 25,00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sessao-produtos" style="margin-bottom: 60px;">
+            <div class="cabecalho-sessao-produtos">
+                <h3>Histórias impactantes</h3>
+                <a>Ver mais</a> 
+            </div>
+            <div class="grid-produtos">
+                <div class="item-prod">
+                    <img class="img-prod" src="livro-diario-anne.png" alt="O Diário de Anne Frank">
+                    <hr size="1px" color="#cdc7e8" width="100%">
+                    <p class="descricao-prod">O Diário de Anne Frank</p>
+                    <div class="categorias-prod-area">
+                        <p style="background-color: #f3b1e5;" class="categoria-prod">Biografia</p>
+                        <p style="background-color: #8ddf9b;" class="categoria-prod">Não-Ficção</p>
+                    </div>
+                    <div style="width: 100%;display: flex; justify-content: space-between; align-items: center;">
+                        <p class="autor-prod">Anne Frank</p>
+                        <div class="estrelas-prod">
+                            <p>4.9</p>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-desmarcada"></div>
+                        </div>
+                    </div>
+                    <div style="height: 100%; width: 100%; display: flex; align-items: flex-end;">
+                        <div class="preco-prod-area">
+                            <div>
+                                <p>A partir de</p>
+                                <p class="preco-prod">R$ 35,50</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-prod">
+                    <img class="img-prod" src="livro-culpa-estrelas.png" alt="A Culpa é das Estrelas">
+                    <hr size="1px" color="#cdc7e8" width="100%">
+                    <p class="descricao-prod">A Culpa é das Estrelas</p>
+                    <div class="categorias-prod-area">
+                        <p style="background-color: #ffbd59;" class="categoria-prod">Romance</p>
+                        <p style="background-color: #ffc4a9;" class="categoria-prod">Drama</p>
+                    </div>
+                    <div style="width: 100%;display: flex; justify-content: space-between; align-items: center;">
+                        <p class="autor-prod">John Green</p>
+                        <div class="estrelas-prod">
+                            <p>4.6</p>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-desmarcada"></div>
+                        </div>
+                    </div>
+                    <div style="height: 100%; width: 100%; display: flex; align-items: flex-end;">
+                        <div class="preco-prod-area">
+                            <div>
+                                <p>A partir de</p>
+                                <p class="preco-prod">R$ 39,90</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-prod">
+                    <img class="img-prod" src="livro-iluminado.png" alt="O Iluminado">
+                    <hr size="1px" color="#cdc7e8" width="100%">
+                    <p class="descricao-prod">O Iluminado</p>
+                    <div class="categorias-prod-area">
+                        <p style="background-color: #ff5757;" class="categoria-prod">Suspense</p>
+                        <p style="background-color: #d3a3ff;" class="categoria-prod">Mistério</p>
+                    </div>
+                    <div style="width: 100%;display: flex; justify-content: space-between; align-items: center;">
+                        <p class="autor-prod">Stephen King</p>
+                        <div class="estrelas-prod">
+                            <p>4.7</p>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-desmarcada"></div>
+                        </div>
+                    </div>
+                    <div style="height: 100%; width: 100%; display: flex; align-items: flex-end;">
+                        <div class="preco-prod-area">
+                            <div>
+                                <p>A partir de</p>
+                                <p class="preco-prod">R$ 55,00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-prod">
+                    <img class="img-prod" src="livro-garota-trem.png" alt="A Garota no Trem">
+                    <hr size="1px" color="#cdc7e8" width="100%">
+                    <p class="descricao-prod">A Garota no Trem</p>
+                    <div class="categorias-prod-area">
+                        <p style="background-color: #ff5757;" class="categoria-prod">Suspense</p>
+                        <p style="background-color: #d3a3ff;" class="categoria-prod">Mistério</p>
+                    </div>
+                    <div style="width: 100%;display: flex; justify-content: space-between; align-items: center;">
+                        <p class="autor-prod">Paula Hawkins</p>
+                        <div class="estrelas-prod">
+                            <p>4.3</p>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-desmarcada"></div>
+                            <div class="estrela-desmarcada"></div>
+                        </div>
+                    </div>
+                    <div style="height: 100%; width: 100%; display: flex; align-items: flex-end;">
+                        <div class="preco-prod-area">
+                            <div>
+                                <p>A partir de</p>
+                                <p class="preco-prod">R$ 34,90</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sessao-produtos">
+            <div class="cabecalho-sessao-produtos">
+                <h3>Para expandir a mente</h3>
+                <a>Ver mais</a> 
+            </div>
+            <div class="grid-produtos">
+                <div class="item-prod">
+                    <img class="img-prod" src="livro-historia-tempo.png" alt="Uma Breve História do Tempo">
+                    <hr size="1px" color="#cdc7e8" width="100%">
+                    <p class="descricao-prod">Uma Breve História do Tempo</p>
+                    <div class="categorias-prod-area">
+                        <p style="background-color: #8ddf9b;" class="categoria-prod">Ciência</p>
+                        <p style="background-color: #93c2f3;" class="categoria-prod">Educação</p>
+                    </div>
+                    <div style="width: 100%;display: flex; justify-content: space-between; align-items: center;">
+                        <p class="autor-prod">Stephen Hawking</p>
+                        <div class="estrelas-prod">
+                            <p>4.8</p>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                        </div>
+                    </div>
+                    <div style="height: 100%; width: 100%; display: flex; align-items: flex-end;">
+                        <div class="preco-prod-area">
+                            <div>
+                                <p>A partir de</p>
+                                <p class="preco-prod">R$ 54,90</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-prod">
+                    <img class="img-prod" src="livro-admiravel-mundo.png" alt="Admirável Mundo Novo">
+                    <hr size="1px" color="#cdc7e8" width="100%">
+                    <p class="descricao-prod">Admirável Mundo Novo</p>
+                    <div class="categorias-prod-area">
+                        <p style="background-color: #a39dff;" class="categoria-prod">Ficção Científica</p>
+                        <p style="background-color: #f3b1e5;" class="categoria-prod">Distopia</p>
+                    </div>
+                    <div style="width: 100%;display: flex; justify-content: space-between; align-items: center;">
+                        <p class="autor-prod">Aldous Huxley</p>
+                        <div class="estrelas-prod">
+                            <p>4.7</p>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-desmarcada"></div>
+                        </div>
+                    </div>
+                    <div style="height: 100%; width: 100%; display: flex; align-items: flex-end;">
+                        <div class="preco-prod-area">
+                            <div>
+                                <p>A partir de</p>
+                                <p class="preco-prod">R$ 42,00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-prod">
+                    <img class="img-prod" src="livro-arte-guerra.png" alt="A Arte da Guerra">
+                    <hr size="1px" color="#cdc7e8" width="100%">
+                    <p class="descricao-prod">A Arte da Guerra</p>
+                    <div class="categorias-prod-area">
+                        <p style="background-color: #c4d6ff;" class="categoria-prod">Filosofia</p>
+                        <p style="background-color: #98d0ff;" class="categoria-prod">Cultura</p>
+                    </div>
+                    <div style="width: 100%;display: flex; justify-content: space-between; align-items: center;">
+                        <p class="autor-prod">Sun Tzu</p>
+                        <div class="estrelas-prod">
+                            <p>4.5</p>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-desmarcada"></div>
+                        </div>
+                    </div>
+                    <div style="height: 100%; width: 100%; display: flex; align-items: flex-end;">
+                        <div class="preco-prod-area">
+                            <div>
+                                <p>A partir de</p>
+                                <p class="preco-prod">R$ 22,50</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-prod">
+                    <img class="img-prod" src="livro-mito-caverna.png" alt="O Mito da Caverna">
+                    <hr size="1px" color="#cdc7e8" width="100%">
+                    <p class="descricao-prod">O Mito da Caverna</p>
+                    <div class="categorias-prod-area">
+                        <p style="background-color: #c4d6ff;" class="categoria-prod">Filosofia</p>
+                        <p style="background-color: #d0f4a7;" class="categoria-prod">Reflexão</p>
+                    </div>
+                    <div style="width: 100%;display: flex; justify-content: space-between; align-items: center;">
+                        <p class="autor-prod">Platão</p>
+                        <div class="estrelas-prod">
+                            <p>4.4</p>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-marcada"></div>
+                            <div class="estrela-desmarcada"></div>
+                        </div>
+                    </div>
+                    <div style="height: 100%; width: 100%; display: flex; align-items: flex-end;">
+                        <div class="preco-prod-area">
+                            <div>
+                                <p>A partir de</p>
+                                <p class="preco-prod">R$ 19,90</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
             </div>
         </div>
 
