@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#fundo-bege {
+    background-color: #f6f2ee; /* O bege da sua imagem */
+    font-family: 'Poppins', sans-serif;
+    color: #1d2b53;
+    min-height: 100vh;
+}
+
+.blog {
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-topo {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.blog-topo h1 {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.lista-blog {
+    list-style: none;
+    width: 100%;
+    max-width: 700px;
+}
+
+.card-livro {
+    background: #ffffff;
+    border-radius: 40px;
+    padding: 60px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+/* --- PROPRIEDADE CSS OBRIGATÓRIA: ANIMATION --- */
+@keyframes flutuar {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.selo-novo {
+    background: #f1c40f; /* Amarelo combinando com seu botão */
+    color: #1d2b53;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+    /* Aplicação da animação */
+    animation: flutuar 3s ease-in-out infinite;
+}
+
+.card-livro h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.card-livro p {
+    color: #756f78;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.info-lancamento {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.info-lancamento span {
+    display: block;
+    font-size: 14px;
+    color: #756f78;
+}
+
+/* Estilização da tag <time> */
+time {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1d2b53;
+}
+
+.btn-reserva {
+    background: #1d2b53;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.btn-reserva:hover {
+    opacity: 0.9;
+}

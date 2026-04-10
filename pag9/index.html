@@ -3,15 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../reset.css">
-    <link rel="stylesheet" href="style.css">   
-    <title>Minha página webos</title>
+    <title>Minha Leitura - Leria</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-    </header>
-    <main>
+    <main class="container">
+        <header class="topo">
+            <h1>Minha Lista</h1>
+            <p>Acompanhe o progresso das suas leituras na Leria.</p>
+        </header>
+
+        <section class="lista-tarefas">
+            <div class="item-tarefa">
+                <input type="checkbox" id="livro1" checked>
+                <label for="livro1">O Despertar do Terror - Autor Brabíssimo</label>
+            </div>
+
+            <div class="item-tarefa">
+                <input type="checkbox" id="livro2">
+                <label for="livro2">A Biblioteca da Meia-Noite</label>
+            </div>
+
+            <div class="item-tarefa">
+                <input type="checkbox" id="livro3" checked>
+                <label for="livro3">Em Outra Vida, Talvez?</label>
+            </div>
+
+            <div class="item-tarefa">
+                <input type="checkbox" id="livro4">
+                <label for="livro4">A Pequena Coreografia do Adeus</label>
+            </div>
+            
+            <div class="controles">
+                <button class="btn-add">Adicionar Livro</button>
+            </div>
+        </section>
     </main>
-    <footer></footer>
 </body>
 </html>

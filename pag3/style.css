@@ -92,7 +92,6 @@ h3 {
     justify-items: center;
     padding: 16px;
     border-radius: 12px;
-    border: 3px solid #cdc7e8;
     border: 1px solid #636363;
     box-shadow: #636363 1px 1px 1px 0px;
     height: 280px;
@@ -258,7 +257,7 @@ h3 {
 
 .input-pesquisa {       
     border-radius: 12px;    
-    border: 3px solid #cdc7e8;
+    border: 1px solid #636363;    
     height: 36px;
     width: 600px;
     margin-right: 12px;
@@ -282,7 +281,7 @@ h3 {
     align-items: center;
     justify-content: space-around;
     border-radius: 16px;
-    border: 3px solid #cdc7e8;
+    border: 1px solid #636363;    
     margin: 0px 0px 60px 0px;
 }
 

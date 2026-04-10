@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    background-color: #f6f2ee; /* Fundo conforme ID Visual */
+    font-family: 'Poppins', sans-serif; /* Fonte conforme ID Visual */
+    margin: 0;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 42px;
+    border-bottom: 5px solid #FFF59D; /* Amarelo Leria */
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.topo p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.lista-tarefas {
+    background: #ffffff;
+    border: 2px solid #000;
+    padding: 30px;
+    box-shadow: 10px 10px 0px #D1C4E9; /* Sombra sólida Roxa Leria */
+}
+
+.item-tarefa {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Estilização do Checkbox */
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    accent-color: #FFB74D; /* Laranja da paleta Leria */
+}
+
+/* Propriedade CSS Obrigatória: text-decoration */
+/* Aplica o risco no texto quando o input está marcado */
+input:checked + label {
+    text-decoration: line-through; 
+    color: #a0a0a0;
+    opacity: 0.7;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.controles {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.btn-add {
+    background-color: #FFF59D; /* Amarelo Leria */
+    border: 2px solid #000;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px #000;
+    transition: 0.2s;
+}
+
+.btn-add:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px #000;
+}

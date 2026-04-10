@@ -1,3 +1,6 @@
+body{
+    background-color: #f6f2ee;
+}
 
 
 main {
@@ -6,8 +9,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    background-color: #333;    
+    margin: 0;   
 }
 
 @media (orientation: portrait) {
@@ -132,7 +134,7 @@ h2 {
     flex-direction: column;
     /* gap: 70px; */
     border-radius: 24px;    
-    border: 3px solid #cdc7e8;
+    border: 1px solid #636363;
     justify-content: space-between;
 }
 
@@ -143,6 +145,7 @@ h2 {
     border-radius: 12px;
     background-color: transparent;
     border: 3px solid #cdc7e8;
+    border: 1px solid #636363;
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
@@ -173,12 +176,11 @@ h2 {
     /* gap: 70px; */
     border-radius: 24px;    
     border: 3px solid #cdc7e8;
+    border: 1px solid #636363;    
     justify-content: space-between;
 }
 
 }
-
-
 
 .input-area {
     display: flex;
@@ -188,7 +190,7 @@ h2 {
 
 .form-input {       
     border-radius: 12px;    
-    border: 3px solid #cdc7e8;
+    border: 1px solid #636363;    
     height: 48px;
 }
 

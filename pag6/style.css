@@ -1,0 +1,68 @@
+/* Importação da fonte conforme ID Visual  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    background-color: #f6f2ee;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    margin: 0;
+    padding: 60px 20px;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-topo h1 {
+    font-size: 48px;
+    border-bottom: 5px solid #FFF59D; /* Amarelo Leria  */
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.faq-topo p {
+    color: #756f78;
+    margin-bottom: 40px;
+}
+
+/* Estilização dos itens de FAQ */
+details {
+    background: #ffffff;
+    border: 2px solid #000000;
+    margin-bottom: 20px;
+    box-shadow: 8px 8px 0px #D1C4E9; /* Sombra Roxa Leria  */
+    overflow: hidden;
+}
+
+summary {
+    padding: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    background-color: #ffffff;
+    /* Propriedade CSS Obrigatória: transition  */
+    transition: background-color 0.4s ease, color 0.4s ease; 
+}
+
+summary:hover {
+    background-color: #D1C4E9; /* Roxo Leria no hover */
+}
+
+/* Efeito visual de expansão */
+details[open] summary {
+    background-color: #FFF59D; /* Amarelo Leria quando aberto */
+    border-bottom: 2px solid #000000;
+}
+
+.conteudo {
+    padding: 20px;
+    background-color: #fff;
+    /* Animação suave para o conteúdo  */
+    transition: all 0.5s ease-in-out;
+}
+
+.conteudo p {
+    margin: 0;
+    line-height: 1.6;
+}

@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f6f2ee; /* Fundo Bege solicitado */
+    font-family: 'Poppins', sans-serif;
+    color: #1d2b53;
+}
+
+/* Container principal */
+.blog{
+    padding: 80px 60px 100px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Cabeçalho da página */
+.blog-topo{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.blog-topo h1{
+    font-size: 108px;
+    color: #1d2b53;
+    margin-bottom: 16px;
+}
+
+.blog-topo p{
+    font-size: 40px;
+    color: #756f78;
+    max-width: 760px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Lista que contém o card */
+.lista-blog{
+    list-style: none;
+    width: 100%;
+    max-width: 1000px; /* Ajuste de largura para o card central único */
+    margin: 0 auto;
+}
+
+/* Estilo do Card Branco */
+.card-livro{
+    background: #ffffff;
+    border-radius: 40px;
+    padding: 60px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    list-style: none;
+}
+
+/* Títulos das seções dentro do card */
+.card-livro h2{
+    font-size: 28px;
+    color: #1d2b53;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.card-livro h2:first-child {
+    margin-top: 0;
+}
+
+/* --- CLASSE DO EXERCÍCIO 11 (ÁRVORE) --- */
+.mapa {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.mapa li {
+    /* Propriedade CSS Obrigatória do PDF */
+    text-indent: 30px; 
+    
+    font-size: 20px;
+    color: #756f78;
+    line-height: 2.5;
+}
+
+/* Símbolo visual da árvore antes do texto */
+.mapa li::before {
+    content: "└ ";
+    color: #1d2b53;
+    font-weight: bold;
+}
+
+a {
+    color: #1d2b53;
+    text-decoration: none;
+}
+
+
+
+.navbar {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+    background: white;
+    border-bottom: 1px solid #ece7db;
+  }
+ 
+  /* Logo */
+  .logo-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+ 
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 54px;
+    color: #16213e;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+ 
+  /* Links de navegação */
+  .navbar nav {
+    display: flex;
+    gap: 45px;
+  }
+ 
+  .navbar nav a {
+    text-decoration: none;
+    color: #2b2b2b;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.3s ease;
+  }
+ 
+  .navbar nav a:hover {
+    color: #F2C94C;
+  }
+ 
+  /* Botão "Entrar" */
+  .ghost {
+    display: inline-block;
+    text-decoration: none;
+    background: #F2C94C;
+    color: #1a1a1a;
+    border: none;
+    padding: 20px 45px;
+    border-radius: 18px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s ease, transform 0.3s ease;
+  }
+ 
+  .ghost:hover {
+    background: #ddb53e;
+    transform: scale(1.05);
+  }
+ 
+  /* ── RESPONSIVIDADE ── */
+ 
+  /* Tablet */
+  @media (max-width: 1100px) {
+    .navbar {
+      padding: 0 40px;
+      gap: 20px;
+    }
+ 
+    .logo {
+      font-size: 44px;
+    }
+ 
+    .navbar nav {
+      gap: 25px;
+    }
+ 
+    .navbar nav a {
+      font-size: 20px;
+    }
+ 
+    .ghost {
+      padding: 16px 30px;
+      font-size: 20px;
+    }
+  }
+ 
+  /* Celular */
+  @media (max-width: 768px) {
+    .navbar {
+      height: auto;
+      padding: 20px;
+      flex-direction: column;
+      gap: 20px;
+    }
+ 
+    .logo-container {
+      justify-content: center;
+    }
+ 
+    .logo {
+      font-size: 42px;
+    }
+ 
+    .navbar nav {
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+ 
+    .navbar nav a {
+      font-size: 18px;
+    }
+ 
+    .ghost {
+      width: 100%;
+      padding: 15px;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
