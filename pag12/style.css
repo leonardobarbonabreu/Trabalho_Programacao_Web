@@ -1,0 +1,231 @@
+body{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    font-size: 16px;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    box-sizing: border-box;     
+}
+
+h2 {
+    margin-left: 40px;
+    font-size: 3.5rem;
+    width: 300px;
+    height: 80%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 1.5rem;
+    width: auto;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+}
+
+@media (min-width: 375px) {
+
+}
+
+/* Estilos para orientação paisagem */
+@media (min-width: 1024px) {
+    main {  
+        padding: 24px;  
+        width: 75%;     
+    }
+
+}
+
+.painel {
+    width: 100%;
+    height: 400px;
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    gap: 90px;
+    border-radius: 24px;      
+    background-color: #ffde59;
+}
+
+.painel div{
+    display: flex;
+    justify-content: end;
+    margin-right: 24px;
+}
+
+.logoLivraria-painel {
+    width: 100%;
+    max-width: 80px;
+    margin-bottom: 20px;     
+    bottom: 600px;
+}
+
+@media (min-width: 375px) {
+    .painel {
+        width: 100%;    
+        height: 20rem;
+        border-radius: 0px;   
+    }
+    
+}
+/* Estilos para orientação paisagem */
+@media (min-width: 1024px) {
+    .painel {
+        right: 40px;        
+        border-radius: 24px;                
+    }
+
+}
+
+.card-evento {
+display: flex;
+flex-direction: column; 
+border-radius: 12px;
+border: 1px solid #636363;
+box-shadow: #636363 1px 1px 4px 0px;
+height: 40rem;
+overflow: hidden; 
+background-color: #f9f9f9;
+
+}
+
+.card-evento .container-imagem,
+.card-evento .container-conteudo {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.card-evento .container-conteudo {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.img-evento {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+
+.titulo-evento {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2c2c2c;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.descricao-evento {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #333;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+
+@media (min-width: 375px) {
+ 
+    .cabecalho-sessao-evento{
+        flex-direction: column;
+        margin-bottom: 2rem; 
+        align-items: center;    
+    }
+    
+    .cabecalho-sessao-evento div{
+        font-size: 1.2rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+}
+
+/* Estilos para orientação paisagem */
+@media (min-width: 1024px) {
+    .card-evento {
+        flex-direction: row;
+        height: 20rem;
+        width: 100%; 
+    }
+    .card-evento div{
+        width: 100vw;        
+    }
+
+    .cabecalho-sessao-evento div{
+        font-size: 1.2rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+}
+
+.sessao-evento {
+    width: 100%;   
+    max-width: 1600px;   
+    margin-top: 4rem;  
+}
+
+.cabecalho-sessao-evento{
+    width: 100%;   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalho-sessao-evento a {
+    text-decoration: underline;
+    margin-bottom: 1.33rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.grid-evento {
+    width: 100%;
+    display: grid;
+    gap: 16px;
+    align-items: center;
+    place-items: center;        
+}
+
+@media (min-width: 375px) {
+    .sessao-evento {    
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+}
+
+.btn-action {
+    width: 8rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    background-color: black;
+    border: none;
+
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+}
+
+.link {
+    font-size: 1rem;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;    
+    text-decoration: underline;
+}
+
